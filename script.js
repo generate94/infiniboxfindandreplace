@@ -9,7 +9,6 @@ function findAndReplace() {
     editor.value = editor.value.replace(regex, replaceText);
 }
 
-// Close the portfolio popup
 function closePopup() {
     document.getElementById("popup").style.display = "none";
 }
