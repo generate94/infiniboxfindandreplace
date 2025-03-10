@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinibox: Find and Replace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Infinibox: Find and Replace</h1>
+        <textarea id="editor" placeholder="Type here..." autofocus></textarea>
+        <div class="controls">
+            <input type="text" id="findText" placeholder="Find">
+            <input type="text" id="replaceText" placeholder="Replace with">
+            <button onclick="findAndReplace()">Replace</button>
+        </div>
+    </div>
+
+    <!-- Portfolio Popup -->
+    <div id="popup">
+        <p>Check out my <a href="https://generate94.github.io/portfolio/" target="_blank">Portfolio</a>!</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
