@@ -4,8 +4,14 @@ function findAndReplace() {
     let replaceText = document.getElementById("replaceText").value;
 
     if (findText.trim() === "") return;
+
+    // Escape special characters for regex
+    let escapedFindText = findText.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&');
     
-    let regex = new RegExp(findText, "g");
+    // Create the regex
+    let regex = new RegExp(escapedFindText, "g");
+
+    // Perform the replace
     editor.value = editor.value.replace(regex, replaceText);
 }
 
